@@ -1,48 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>TodoMVC</title>
+    <title>TodoMVC</title>
 
-  <link rel="stylesheet"
-        href="todolist.css">
-</head>
+    <link rel="stylesheet" href="todolist.css" />
+  </head>
 
-<body>
+  <body>
+    <section class="todoapp">
+      <header class="header">
+        <h1>todos</h1>
+        <input
+          class="new-todo"
+          placeholder="What needs to be done?"
+          autofocus
+          id="new-todo"
+        />
+      </header>
 
-<section class="todoapp">
+      <section class="main">
+        <input class="toggle-all" type="checkbox" />
+        <ul class="todo-list" id="todo-list">
+          <template id="template">
+            <li>
+              <div class="view">
+                <input class="toggle" type="checkbox" />
+                <label></label>
+                <button class="destroy" />
+              </div>
+              <input class="edit" />
+            </li>
+          </template>
+        </ul>
+      </section>
 
-  <header class="header">
-    <h1>todos</h1>
-    <input class="new-todo"
-           placeholder="What needs to be done?"
-           autofocus />
-  </header>
-
-  <section class="main">
-    <input class="toggle-all"
-           type="checkbox" />
-    <ul class="todo-list">
-      <li>
-        <div class="view">
-          <input class="toggle"
-                 type="checkbox" />
-          <label>Todo Title</label>
-          <button class="destroy" />
-        </div>
-        <input class="edit" />
-      </li>
-    </ul>
-  </section>
-
-  <footer class="footer">
-    <span class="todo-count"><strong>0</strong> items left</span>
-    <button class="clear-completed">Clear completed
-    </button>
-  </footer>
-
-</section>
-
-</body>
+      <footer class="footer">
+        <span class="todo-count"><strong>0</strong> items left</span>
+        <button class="clear-completed">Clear completed</button>
+      </footer>
+    </section>
+    <script src="./dist/logic.js"></script>
+  </body>
 </html>
