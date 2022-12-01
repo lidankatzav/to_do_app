@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>TodoMVC</title>
+    <title>Todos</title>
 
     <link rel="stylesheet" href="todolist.css" />
   </head>
@@ -21,7 +21,7 @@
       </header>
 
       <section class="main">
-        <input class="toggle-all" type="checkbox" />
+        <input class="toggle-all" id="toggle-all" type="checkbox" />
         <ul class="todo-list">
           <template id="template">
             <li>
@@ -42,6 +42,9 @@
           ><strong>0</strong> items left</span
         >
         <button class="clear-completed" id="clear">Clear</button>
+      </footer>
+      <footer class="footer">
+        <text>Developed By Lidan Katzav</text>
       </footer>
     </section>
     <script src="./dist/logic.js"></script>
