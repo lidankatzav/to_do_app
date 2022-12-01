@@ -22,7 +22,7 @@
 
       <section class="main">
         <input class="toggle-all" type="checkbox" />
-        <ul class="todo-list" id="todo-list">
+        <ul class="todo-list">
           <template id="template">
             <li>
               <div class="view">
@@ -33,12 +33,15 @@
               <input class="edit" />
             </li>
           </template>
+          <div id="todo-list"></div>
         </ul>
       </section>
 
       <footer class="footer">
-        <span class="todo-count"><strong>0</strong> items left</span>
-        <button class="clear-completed">Clear completed</button>
+        <span class="todo-count" id="counter"
+          ><strong>0</strong> items left</span
+        >
+        <button class="clear-completed" id="clear">Clear</button>
       </footer>
     </section>
     <script src="./dist/logic.js"></script>
